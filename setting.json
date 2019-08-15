@@ -1,0 +1,38 @@
+[
+    {
+        "entryPoint": "/",
+        "httpStatusCode": "200",
+        "contentType": "Content-Type: application/json; charset=UTF-8",
+        "sleep": "0",
+        "response": {
+            "hoge" : "0",
+            "fuga" : {
+                "piyo": "piyopiyo"
+            }
+        }
+    },
+    {
+        "entryPoint": "/hoge/fuga",
+        "httpStatusCode": "200",
+        "contentType": "Content-Type: application/json; charset=UTF-8",
+        "sleep": "0",
+        "response": {
+            "hoge" : "1",
+            "fuga" : {
+                "piyo": "piyopiyo"
+            }
+        }
+    },
+    {
+        "entryPoint": "/hoge/fuga2",
+        "httpStatusCode": "200",
+        "contentType": "Content-Type: application/json; charset=UTF-8",
+        "sleep": "0",
+        "response": {
+            "hoge" : "2",
+            "fuga" : {
+                "piyo": "piyopiyo"
+            }
+        }
+    }
+]
