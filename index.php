@@ -1,10 +1,14 @@
 <?php
-// echo 'hhhhh';
 $requestUri = preg_replace('/\?.+/', '', $_SERVER['REQUEST_URI']);
 
+// setting.jsonの読み込み
 $settingJson = file_get_contents(__DIR__.'/setting.json');
 $settingArray = json_decode($settingJson, true);
+
+// エントリポイント一覧の取得
 $entryPoints = array_column($settingArray, 'entryPoint');
+
+// REQUEST_URIのエントリポイントがヒットするか確認
 $entryPointIndex = array_search($requestUri, $entryPoints);
 
 // 登録外のエントリポイントの場合、404を返す
@@ -26,4 +30,3 @@ if (strpos($settingArray[$entryPointIndex]['contentType'], 'xml') !== false) {
     // レスポンスがjsonの場合
     echo json_encode($settingArray[$entryPointIndex]['response']);
 }
-
