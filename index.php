@@ -11,6 +11,14 @@ $entryPoints = array_column($settingArray, 'entryPoint');
 // REQUEST_URIのエントリポイントがヒットするか確認
 $entryPointIndex = array_search($requestUri, $entryPoints);
 
+header("Access-Control-Allow-Origin: *");
+
+// ルートにアクセスがあった場合、setting.jsonをそのまま返す
+if ($requestUri === '/') {
+    echo $settingJson;
+    return;
+}
+
 // 登録外のエントリポイントの場合、404を返す
 if ($entryPointIndex === false) {
     header('HTTP/1.1 404');

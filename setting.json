@@ -1,17 +1,6 @@
 [
     {
-        "entryPoint": "/",
-        "httpStatusCode": "200",
-        "contentType": "Content-Type: application/json; charset=UTF-8",
-        "sleep": "0",
-        "response": {
-            "hoge" : "0",
-            "fuga" : {
-                "piyo": "piyopiyo"
-            }
-        }
-    },
-    {
+        "name": "name1",
         "entryPoint": "/hoge/fuga",
         "httpStatusCode": "200",
         "contentType": "Content-Type: application/json; charset=UTF-8",
@@ -24,6 +13,7 @@
         }
     },
     {
+        "name": "name2",
         "entryPoint": "/hoge/fuga2",
         "httpStatusCode": "200",
         "contentType": "Content-Type: application/json; charset=UTF-8",
