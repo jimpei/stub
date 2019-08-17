@@ -24,5 +24,44 @@
                 "piyo": "piyopiyo"
             }
         }
+    },
+    {
+        "name": "name3",
+        "entryPoint": "/delay",
+        "httpStatusCode": "200",
+        "contentType": "Content-Type: application/json; charset=UTF-8",
+        "sleep": "3",
+        "response": {
+            "hoge" : "2",
+            "fuga" : {
+                "piyo": "piyopiyo"
+            }
+        }
+    },
+    {
+        "name": "name4",
+        "entryPoint": "/404",
+        "httpStatusCode": "404",
+        "contentType": "Content-Type: application/json; charset=UTF-8",
+        "sleep": "0",
+        "response": {
+            "hoge" : "2",
+            "fuga" : {
+                "piyo": "piyopiyo"
+            }
+        }
+    },
+    {
+        "name": "name5",
+        "entryPoint": "/503",
+        "httpStatusCode": "503",
+        "contentType": "Content-Type: application/json; charset=UTF-8",
+        "sleep": "0",
+        "response": {
+            "hoge" : "2",
+            "fuga" : {
+                "piyo": "piyopiyo"
+            }
+        }
     }
 ]
